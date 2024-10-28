@@ -1,0 +1,44 @@
+/* Footer */
+
+.footer {
+    background-color: $color-primary-dark;
+    color: #fff;
+    height: 15rem;    
+    padding: 2rem;
+
+    &_tele, 
+    &_mobil,
+    &_email {
+        color: white;
+        padding-left: 1rem;
+    }
+
+    & address {
+        font-size: small;
+        margin-top: 3rem;
+        gap: 4rem;
+        padding-left: 3rem;
+    }
+
+    & .flex {
+        justify-content: space-between; /*Sorgt dafür das Logo links und Navigation rechts ist*/
+    }
+
+    & ul  {
+        display: flex; 
+        margin: 3rem 2rem;
+    }
+
+    & ul a {
+        color: $color-white;
+        margin: 3rem 2rem;
+
+        &:hover {
+            border-bottom: 2px $color-white solid;
+        }
+    }
+
+   
+}
+
+

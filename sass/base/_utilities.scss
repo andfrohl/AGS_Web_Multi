@@ -1,0 +1,174 @@
+.container-big {
+    max-width: 120rem;
+    margin: 0 auto;
+    overflow: hidden; /* Fixed die Lücke über der NavBar, verursacht durch die margin des h1, h2 */
+    padding: 0 1rem;
+    // background-color: orangered;
+    overflow: visible;
+}
+
+.container {
+    max-width: 118rem;
+    margin: 0 auto;
+    overflow: hidden; /* Fixed die Lücke über der NavBar, verursacht durch die margin des h1, h2 */
+    padding: 0 1rem;
+    // background-color: orangered;
+    
+}
+
+.card {
+    background-color: $color-grey-light-1;
+    border-radius: 1rem;
+    box-shadow: 0 3px 1rem rgba($color-black, .2);
+    padding: .8rem;
+    margin: 1rem;
+}
+
+// Backgrounds & colored buttons
+.bg-primary,
+.btn-primary {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.bg-secondary,
+.btn-secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+}
+
+.bg-secondary-dark,
+.btn-secondary-dark {
+    background-color: $color-secondary-dark;
+    color: $color-white;
+}
+
+.bg-secondary-light,
+.btn-secondary-light {
+    background-color: $color-secondary-light;
+    color: $color-white;
+}
+
+// Text sizes
+.lead {
+    font-size: 2rem;
+}
+
+.sm {
+    font-size: 1.6rem;
+}
+
+.md {
+    font-size: 3.2rem;
+}
+
+.lg {
+    font-size: 4.8rem;
+}
+
+.xl {
+    font-size: 6.4rem;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+.background-grey {
+    background-color: $color-grey-light-5;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    visibility: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    line-height: 2em;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+
+    @include respond(tab-port) {    
+        width: 90%;
+    }
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-6 {
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: 1rem;
+}
+
+// Margin Top and Bottom
+.my-1 { margin: 1rem 0;}
+
+.my-2 { margin: 1.5rem 0;}
+
+.my-3 { margin: 2rem 0;}
+
+.my-4 { margin: 3rem 0;}
+
+.my-5 { margin: 4rem 0;}
+
+// Margin all around
+.m-1 { margin: 1rem;}
+
+.m-2 { margin: 1.5rem;}
+
+.m-3 { margin: 2rem;}
+
+.m-4 { margin: 3rem;}
+
+.m-5 { margin: 4rem;}
+
+// Padding Top and Bottom
+.py-1 { padding: 1rem 0;}
+
+.py-2 { padding: 1.5rem 0;}
+
+.py-3 { padding: 2rem 0;}
+
+.py-4 { padding: 3rem 0;}
+
+.py-5 { padding: 4rem 0;}
+
+// Padding all around
+.p-1 { padding: 1rem;}
+
+.p-2 { padding: 1.5rem;}
+
+.p-3 { padding: 2rem;}
+
+.p-4 { padding: 3rem;}
+
+.p-5 { padding: 4rem;}
+
+// Margin bottom
+.mb-10 { margin-bottom: 15rem;}

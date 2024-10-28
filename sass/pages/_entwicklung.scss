@@ -1,0 +1,103 @@
+.start-container {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    
+    // width: 100vw;
+    // height: 50rem;
+    // margin-top: 10rem;
+    // padding: 1rem;
+    // box-shadow: 0 3px 1rem rgba($color-black, .2);
+    
+    margin-top: 9rem;  
+    width: 100%;
+    height: 64rem;
+   
+    // position: relative;
+    
+    /* align-items: flex-end; */
+    
+    
+    /* padding: 0.5rem; */
+
+    @include respond(tab-port) {
+      height: auto;
+    }  
+    
+    
+    &__bild {
+      display: flex;
+      min-height: auto;
+      width: inherit;
+      @include respond(tab-port) {
+        min-height: auto;
+      }
+    }
+
+    &__text {
+      position: absolute;
+      top: 15rem;
+      left: 10vw;
+      background-color: $color-primary;
+      color: $color-grey-light-1;
+      padding: 1rem 5rem;
+      text-align: left;
+      line-height: 1;
+      border-radius: 5px;
+      font-size: 3rem;
+          //font-weight: 500;
+          // text-shadow: -1px -1px 0px rgba($color-grey-light-3, 0.7),
+          // 3px 3px 0px rgba($color-grey-light-1, 0.7),
+          // 6px 6px 0px #00000055;
+          text-transform: uppercase;
+          //box-shadow: 5px 3px 1rem rgba($color-black, .2);
+
+          @include respond(tab-port) {
+            font-size: 2rem;
+            padding: 1rem 2rem;
+            left: 5vw;
+            top: 12rem;
+          }
+
+          @include respond(phone) {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            left: 5vw;
+            top: 12rem;
+          }
+    }
+}
+
+.content_layout {
+  margin-top: 5rem;
+  width: 100%;
+
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+
+.konstruktion__heading,
+.service__heading,
+.leichtbau__heading,
+.qualitaet__heading {
+  
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left ;
+    padding-left: 2rem;
+    
+    
+    background-image: linear-gradient(to right, $color-secondary, $color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+  
+
+}
